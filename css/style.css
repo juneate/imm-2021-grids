@@ -1,3 +1,33 @@
 body {
   background-color: lightseagreen;
 }
+.layout {
+  background-color: teal;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-rows: 50px auto 50px; */
+  /* grid-gap: 1em; */
+}
+.layout > * {
+  padding: 1em;
+}
+header {
+  background-color: grey;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1 / 4;
+}
+nav {
+  background-color: gold;
+}
+article {
+  background-color: white;
+}
+aside {
+  background-color: lightblue;
+}
+footer {
+  background-color: mediumorchid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
